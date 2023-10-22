@@ -1,24 +1,18 @@
 <?php
 
-function valoracion($nombre, $rating = 5) {
-    echo "El $nombre tiene un rating de $rating";
+function sumarEnteros(int $entero1, int $entero2):  int |float
+{
+    return $entero1 + $entero2;
 }
 
+$resultado= sumarEnteros(2, 7.3);
 
-//Cuando algun parametro es opcional y queremos tener uno por defecto esto es lo que podemos hacer.
+// Al hacer esto nos va a dar la suma de 9 ya que estamos indicando que los valores que debe tomar son ENTEROS, por ende hace caso omiso al decimal.
 
-function concatenar(...$palabras) {
-    $resultado = "";
-    foreach($palabras as $palabra) {
-        
-        $resultado .= $palabra . " ";
+// Nosotros podemos especificar que tipo de dato queremos recibir y los tipos de datos que hay son los siguientes:
 
-    }
-    echo $resultado;
-}
+// int, float, string, bool, array, object, null
 
-concatenar('Curso', 'PHP', '8','Desde', 'Cero');
-
-//Esto se puede hacer cuando no sabemos cuantos parametros vamos a necesitar en una funcion, al poner ...$palabras, todos los parametros que pongamos se guardaran en un array. 
+echo $resultado;
 
 ?>
