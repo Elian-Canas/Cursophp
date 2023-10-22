@@ -1,7 +1,19 @@
 <?php
 
-//Para declarar constantes se definen así
-define ('CURSO', 'PHP 8 desde cero');
+$a = 5;
+$b = 10;
 
-    echo CURSO;
+
+function test($n){
+    $n = $n + 10; 
+}
+//Cuando pasamos asi las variables se dice que estamos pasando parametros por valor 
+//Cuando queremos pasarle la variable completa para que ejecute la funcion correctamente necesitamos poner el signo &  
+
+test($a);
+test($b);
+
+echo $a . "<br>";
+echo $b;
+
 ?>
