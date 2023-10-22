@@ -1,19 +1,10 @@
 <?php
 
-$a = 5;
-$b = 10;
-
-
-function test(&$n){
-    $n = $n + 10; 
+function valoracion($nombre, $rating = 5) {
+    echo "El $nombre tiene un rating de $rating";
 }
-//Cuando pasamos asi las variables se dice que estamos pasando parametros por valor 
-//Cuando queremos pasarle la variable completa para que ejecute la funcion correctamente necesitamos poner el signo &  
 
-test($a);
-test($b);
+valoracion("Curso PHP 8 desde cero")
 
-echo $a . "<br>";
-echo $b;
-
+//Cuando algun parametro es opcional y queremos tener uno por defecto esto es lo que podemos hacer.
 ?>
