@@ -4,7 +4,7 @@ $a = 5;
 $b = 10;
 
 
-function test($n){
+function test(&$n){
     $n = $n + 10; 
 }
 //Cuando pasamos asi las variables se dice que estamos pasando parametros por valor 
