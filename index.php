@@ -1,35 +1,24 @@
 <?php
 
-$datos = [
-   [ 
-    'nombre' => 'Elian Santiago Cañas',
-    'email' => 'eliansa123@gmail.com',
-    'celular' => '3165188961' 
-   ],
-   [
-    'nombre' => 'David Felipe Cañas',
-    'email' => 'david@gmail.com',
-    'celular' => '3213292928'
-   ],
-   [
-    'nombre' => 'Hernando Cañas',
-    'email' => 'hernando@gmail.com',
-    'celular' => '3156737077'
-   ],
-   ['nombre' => 'Luz Neida Barragan',
-   'email' => 'luzneida@gmail.com',
-   'celular' => '3177823944']   
-];
+// $array = [1, 2, 3];
 
-foreach ($datos as $item) {
-    echo $item['nombre'] . "<br>";
-    echo $item['email'] . "<br>";
-    echo $item['celular'] . "<br>";
-    
-    echo "<hr>";
+// list($a, $b, $c) = $array;
 
+// echo $b . "<br>";
+
+// $array2= range(10,20);
+
+// var_dump($array2);
+// echo count($array2);
+
+$array = ['Victor', 'Pamela', 'Elizabeth', 'Iris'];
+
+unset($array[2]);
+// unset sirve para borrar un elemento del array
+
+if (in_array('Elizabeth', $array)) {
+    echo "El valor buscado se encuentra dentro de la lista";
+} else {
+    echo "El valor buscado NO se encuentra dentro de la lista";
 }
 
-// Arrays multidimensionales, se pueden poner uno dentro de otro.
-
-?>
