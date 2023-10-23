@@ -1,9 +1,10 @@
 <?php
 
-$array = [10, "Victor", 15, 20, false];
+$datos = [
+    'nombre' => 'Elian Santiago Cañas',
+    'email' => 'eliansa123@gmail.com',
+    'celular' => '3165188961'    
+];
 
-echo $array[1]
-
-// Podemos guardar cualquier tipo de dato en un array y no vamos a tener problema
-
+echo $datos['email'];
 ?>
